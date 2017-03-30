@@ -1,38 +1,5 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Детские площадки</title>
-    <link rel="stylesheet" href="swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <section id="header" class="header">
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.png">
-            </div>
-            <div class="wrapper">
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">Каталог продукции</a></li>
-                        <li><a href="#">Наши проекты</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li class="btn-sel-wrapper">
-                            <button type="button" class="btn btn-my-selection">
-                                <img src="images/star-icon.png">
-                                Моя подборка
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <div class="phones">
-                    <a href="tel: +78122428208">+7 812 242 82 08</a><br>
-                    <a href="tel: +79313163170">+7 931 315 31 70</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<?php require_once("header.php"); ?>
+
     <section id="slider-main" class="slider-main swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -291,45 +258,5 @@
             </div>
         </div>
     </section>
-    <section id="footer" class="footer">
-        <div class="container">
-            <div class="contacts">
-                <h3 class="title">ООО &laquo;СГ Индустрия&raquo;</h3>
-                <p class="address">190121, г. Санкт-Петербург, ул. Садовая, д. 104, оф. 405</p>
-                <p class="phones">
-                    <a href="#">+7 931 315 31 70</a><br>
-                    <a href="#">+7 812 242 82 08</a>
-                </p>
-                <p class="email">
-                    <a href="#">info@kompan-spb.ru</a>
-                </p>
-            </div>
-            <div class="copyright">2016 &copy;</div>
-            <div class="socials">
-                <h3 class="title">Мы в социальных сетях</h3>
-                <div class="links">
-                    <a href="#"><img src="images/vk.png"></a>
-                    <a href="#"><img src="images/inst.png"></a>
-                    <a href="#"><img src="images/fb.png"></a>
-                    <a href="#"><img src="images/tw.png"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="swiper/js/swiper.jquery.min.js"></script>
-    <script>
-        var sliderMain = new Swiper ("#slider-main", {
-            direction: 'horizontal',
-            loop: true,
-        });
-        var videoCarousel = new Swiper ("#video .video-carousel", {
-            direction: 'horizontal',
-            loop: true,
-            slidesPerView: 4,
-            prevButton: '.swiper-button-prev',
-            nextButton: '.swiper-button-next'
-        });
-    </script>
-</body>
-</html>
+
+<?php require_once("footer.php"); ?>
