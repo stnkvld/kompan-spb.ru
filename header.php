@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <title>Детские площадки</title>
     <link rel="stylesheet" href="swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/multirange.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section id="header" class="header">
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png">
+                <a href="/"><img src="images/logo.png"></a>
             </div>
             <div class="wrapper">
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Каталог продукции</a></li>
-                        <li><a href="#">Наши проекты</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="/catalog.php">Каталог продукции</a></li>
+                        <li><a href="/projects.php">Наши проекты</a></li>
+                        <li><a href="/contacts.php">Контакты</a></li>
                         <li class="btn-sel-wrapper">
                             <button type="button" class="btn btn-my-selection">
                                 <img src="images/star-icon.png">

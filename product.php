@@ -103,8 +103,8 @@
                             <input type="text" name="email">
                         </div>
                         <div class="form-group send-compilation">
-                            <label>Отправить подборку</label>
-                            <input type="checkbox" class="ios-switch green  bigswitch" checked /><div><div></div></div>
+                            <label for="send-compilation">Отправить подборку</label>
+                            <input type="checkbox" class="ios-switch green bigswitch" checked id="send-compilation"><div><div></div></div>
                         </div>
                         <div class="form-group">
                             <label for=""></label>
@@ -326,6 +326,42 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="compilation" class="compilation">
+        <div class="container">
+            <h4 class="title">
+                Моя подборка
+                <img src="images/add-to-compilation-icon-2.png">
+            </h4>
+            <a href="">очистить подборку</a>
+            <ul>
+                <li>
+                    <img src="images/compilation-1.png">
+                    <h4 class="title">PCM310101</h4>
+                </li>
+                <li>
+                    <img src="images/compilation-1.png">
+                    <h4 class="title">PCM310101</h4>
+                </li>
+                <li>
+                    <img src="images/compilation-1.png">
+                    <h4 class="title">PCM310101</h4>
+                </li>
+                <li>
+                    <img src="images/compilation-1.png">
+                    <h4 class="title">PCM310101</h4>
+                </li>
+                <li>
+                    <img src="images/compilation-1.png">
+                    <h4 class="title">PCM310101</h4>
+                </li>
+                <li>
+                    <img src="images/compilation-1.png">
+                    <h4 class="title">PCM310101</h4>
+                </li>
+            </ul>
+            <button type="button" class="btn-look-compilation">Смотреть свою подборку <span>></span></button>
         </div>
     </section>
 

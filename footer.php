@@ -33,6 +33,7 @@
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="swiper/js/swiper.jquery.min.js"></script>
+<script src="js/multirange.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
