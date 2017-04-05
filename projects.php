@@ -19,8 +19,12 @@
                         <h2 class="title">Школа - детская игровая площадка</h2>
                         <div class="left-right">
                             <div class="left">
-                                <div id="slider-realized-in-top-1" class="swiper-container gallery-top">
+                                <div id="slider-realized-in-top" class="swiper-container gallery-top">
                                     <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
+                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
+                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
+                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
                                         <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
                                         <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
                                         <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
@@ -32,8 +36,8 @@
                                         <img src="images/prev.png">
                                     </div>
                                 </div>
-                                <div id="slider-realized-in-bottom-1" class="swiper-container gallery-thumbs">
-                                    <div class="swiper-wrapper" style="transform: none;">
+                                <div id="slider-realized-in-bottom" class="swiper-container gallery-thumbs">
+                                    <div class="swiper-wrapper">
                                         <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
                                         <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
                                         <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
@@ -59,10 +63,14 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="map">
-                            <h2 class="title">Карта выполненных проектов</h2>
-                        </div>
                     </div>
+                    <div class="swiper-slide">
+                        <h2 class="title">Школа - детская игровая площадка</h2>
+                    </div>
+                </div>
+                <div class="map">
+                    <h2 class="title">Карта выполненных проектов</h2>
+                    <div id="map-realized" class="map-realized"></div>
                 </div>
                 <div class="btn-wrapper">
                     <div class="button-prev">
@@ -81,7 +89,7 @@
                         <h2 class="title">Детская игровая площадка</h2>
                         <div class="left-right">
                             <div class="left">
-                                <img src="images/design-content-1.png">
+                                <img src="images/design-content-1.jpg">
                             </div>
                             <div class="right">
                                 <p>
@@ -109,5 +117,7 @@
             </div>
         </div>
     </section>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map-realized.js"></script>
 
 <?php require_once("footer.php"); ?>

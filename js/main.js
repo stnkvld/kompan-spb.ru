@@ -22,46 +22,51 @@ $(document).ready(function() {
         direction: 'horizontal',
         loop: true,
         nextButton: '.button-next',
-        prevButton: '.button-prev'
+        prevButton: '.button-prev',
+        effect: "fade",
+        fade: { crossFade: true }
     });
 
     var sliderSafety = new Swiper("#slider-safety", {
         direction: 'horizontal',
         loop: true,
         nextButton: '.button-next',
-        prevButton: '.button-prev'
+        prevButton: '.button-prev',
+        effect: "fade",
+        fade: { crossFade: true }
     });
 
     var sliderRealized = new Swiper("#slider-realized", {
         direction: 'horizontal',
         loop: true,
         nextButton: '.button-next',
-        prevButton: '.button-prev'
+        prevButton: '.button-prev',
+        simulateTouch: false
     });
+
+    var sliderRealizedInTop = new Swiper("#slider-realized-in-top", {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 10
+    });
+
+    var sliderRealizedInBottom = new Swiper("#slider-realized-in-bottom", {
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        simulateTouch: false
+    });
+    sliderRealizedInTop.params.control = sliderRealizedInBottom;
+    sliderRealizedInBottom.params.control = sliderRealizedInTop;
 
     var sliderDesign = new Swiper("#slider-design", {
         direction: 'horizontal',
         loop: true,
         nextButton: '.button-next',
-        prevButton: '.button-prev'
+        prevButton: '.button-prev',
+        effect: "fade",
+        fade: { crossFade: true }
     });
-
-    var sliderRealizedInTop = new Swiper("#slider-realized-in-top-1", {
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        spaceBetween: 10,
-    });
-
-    var sliderRealizedInBottom = new Swiper("#slider-realized-in-bottom-1", {
-        spaceBetween: 10,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        touchRatio: 0.2,
-        slideToClickedSlide: true
-    });
-    sliderRealizedInTop.params.control = sliderRealizedInTop;
-    sliderRealizedInBottom.params.control = sliderRealizedInBottom;
-
 
     $("#product-card .right .specifications li .line").each(function(i, elem) {
         $(this).width($(this).parents("li").width() - $(this).siblings(".title").width() - $(this).siblings(".value").width());
@@ -106,11 +111,17 @@ $(document).ready(function() {
             }, 400);
         }
     });
+
+    $("a.clear-filter").on("click", function() {
+        $(this).siblings(".checkbox-wrapper").find("input[type='checkbox']").prop("checked", false);
+    });
+
+    // $(".age a.clear-filter").on("click", function() {
+    //     $(".age .wrapper-1 input").val("0");
+    //     $(".age .wrapper-2 input").val("16+");
+    //     $(".multirange").val("4,12");
+    // });
 });
-
-function changeRangeVal(newVal){
-
-}
 
 $(document).resize(function() {
     $("#product-card .right .specifications li .line").each(function(i, elem) {

@@ -1,7 +1,7 @@
 <?php require_once("header.php"); ?>
 
     <section id="contacts" class="contacts">
-        <div id="map" class="map"></div>
+        <div id="map-contacts" class="map-contacts"></div>
         <div class="info">
             <h3 class="title">Контакты</h3>
             <p class="invoices">
@@ -51,6 +51,6 @@
         </div>
     </section>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/map.js"></script>
+    <script src="js/map-contacts.js"></script>
 
 <?php require_once("footer.php"); ?>
