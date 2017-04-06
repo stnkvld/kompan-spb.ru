@@ -224,6 +224,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="founded-adaptive">
+                                <span class="left">
+                                    найдено <span class="num">35</span> шт.
+                                </span>
+                                <button type="button" class="btn-show">Показать</button>
+                            </div>
                             <div class="show-and-clear">
                                 <button class="btn-show">Показать</button>
                                 <a class="clear">сбросить</a>

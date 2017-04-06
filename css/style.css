@@ -153,8 +153,8 @@ section .container > .title,
 
 #about-company p,
 #architects p {
-    font-size: 1.08vw;
-    line-height: 1.4vw;
+    font-size: 1.33vw;
+    line-height: 1.55vw;
     font-weight: 100;
     margin: 0 0 1.6vw 0;
 }
@@ -189,7 +189,8 @@ section .container > .title,
 }
 
 #production .product img {
-    width: 100%;
+    width: 115%;
+    transform: translateX(-7.5%);
 }
 
 #production .product .title {
@@ -336,6 +337,7 @@ section .container > .title,
 }
 
 #video .swiper-slide {
+    width: 25%;
     text-align: center;
 }
 
@@ -507,6 +509,87 @@ section .container > .title,
     margin-top: 2.5vw;
 }
 
+#seo {
+    margin-top: 5.5vw;
+    margin-bottom: 8vw;
+}
+
+#seo .container {
+    position: relative;
+}
+
+#seo .title {
+    font-family: "DinPro-Bold", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.04vw;
+    color: black;
+    margin-bottom: 0.2vw;
+    background: none;
+    margin-top: 1.5vw;
+}
+
+#seo .content {
+    max-height: 8vw;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#seo .content.collapsed {
+    height: auto;
+    max-height: 40vw;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#seo .content.collapsed + .icon {
+    transform: rotate(180deg);
+    background-color: transparent;
+    bottom: -4vw;
+    -webkit-transition: max-height 0.5s ease;
+    -moz-transition: max-height 0.5s ease;
+    -o-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+}
+
+#seo p {
+    margin: 0;
+    font-size: 1.05vw;
+}
+
+#seo ul {
+    padding-left: 0;
+    margin-top: 0.2vw;
+}
+
+#seo ul li {
+    list-style-type: none;
+}
+
+#seo .icon {
+    width: 100%;
+    height: 2.5vw;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 2.5vw;
+    -webkit-transition: max-height 0.5s ease;
+    -moz-transition: max-height 0.5s ease;
+    -o-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+}
+
+#seo .icon img {
+    display: inline-block;
+    width: 1.2vw;
+    vertical-align: bottom;
+}
+
 #footer {
     position: relative;
     padding: 1.5vw 0 2vw 0;
@@ -613,6 +696,10 @@ section .container > .title,
 
 #contacts {
     position: relative;
+}
+
+#contacts ~ #seo {
+    display: none;
 }
 
 #contacts .info {
@@ -844,6 +931,7 @@ section .container > .title,
 #product-card .add-to-compilation span {
     font-size: 1vw;
     margin-right: 0.8vw;
+    vertical-align: middle;
 }
 
 #product-card .add-to-compilation .icon {
@@ -883,6 +971,7 @@ section .container > .title,
 }
 
 #product-card .you-know .options li img {
+    width: 4vw;
     vertical-align: middle;
     margin-right: 0.3vw;
 }
@@ -906,10 +995,10 @@ section .container > .title,
 }
 
 #product-card .drawings-and-application .drawings .title {
+    font-size: 1.5vw;
     font-family: "DinPro-Bold", sans-serif;
     text-transform: uppercase;
     margin: 0 0 1.5vw 0;
-    height: 1.6vw;
 }
 
 #product-card .drawings-and-application .drawings .photos {
@@ -1362,7 +1451,7 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
     color: white;
     text-transform: uppercase;
     margin-left: 1vw;
-    padding: 0.5vw 4.5vw 0.5vw 1.5vw;
+    padding: 0.4vw 4.5vw 0.5vw 1.5vw;
     background: -moz-linear-gradient(bottom, rgba(126,191,58,1) 0%, rgba(10,156,187,1) 100%);
     background: -webkit-linear-gradient(bottom, rgba(126,191,58,1) 0%,rgba(10,156,187,1) 100%);
     background: linear-gradient(to top, rgba(126,191,58,1) 0%,rgba(10,156,187,1) 100%);
@@ -1528,6 +1617,34 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
     border-bottom: 1px dotted #757575;
     margin: 0 0 0.8vw 1vw;
     cursor: pointer;
+}
+
+#catalog .founded-adaptive {
+    display: none;
+    text-align: center;
+    margin-top: 1.5vw;
+    margin-bottom: 2vw;
+}
+
+#catalog .founded-adaptive .left {
+    font-size: 4vw;
+}
+
+#catalog .founded-adaptive .btn-show {
+    font-size: 4vw;
+    border: 0;
+    border-top-right-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: -moz-linear-gradient(bottom, rgba(126,191,58,1) 0%, rgba(10,156,187,1) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(126,191,58,1) 0%,rgba(10,156,187,1) 100%);
+    background: linear-gradient(to top, rgba(126,191,58,1) 0%,rgba(10,156,187,1) 100%);
+    outline: none;
+    cursor: pointer;
+    padding: 0.4vw 1.2vw;
+    margin-right: 0.5vw;
 }
 
 .checkbox-wrapper {
@@ -2488,6 +2605,7 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
     #catalog .clear-filter {
         font-size: 3vw;
         border-bottom-width: 2.5px;
+        margin-bottom: 1.5vw;
     }
 
     .checkbox {
@@ -2604,18 +2722,20 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
         font-size: 3vw;
     }
 
-    #slider-service, #slider-safety {
+    #slider-service,
+    #slider-safety {
         width: 100%;
+        margin-bottom: 3vw;
     }
 
     #slider-service .top-background,
     #slider-safety .top-background {
-        height: 8.25vw;
+        height: 5.25vw;
     }
 
     #slider-service .title,
     #slider-safety .title {
-        font-size: 4vw;
+        font-size: 2.5vw;
     }
 
     #slider-service .text,
@@ -2629,5 +2749,298 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
     #service-and-safety .container,
     #catalog #service-and-safety {
         flex-direction: column;
+    }
+
+    #product-card .title-and-back {
+        width: 100%;
+    }
+
+    #product-card .title-and-back .title,
+    #product-card .guarantee .title {
+        font-size: 5vw;
+    }
+
+    #product-card .btn-back {
+        font-size: 3vw;
+        padding: 0.5vw 1vw 0.5vw 3.2vw;
+    }
+
+    #product-card .photos-and-specifications {
+        flex-direction: column;
+    }
+
+    #product-card .left {
+        width: 100%;
+    }
+
+    #product-card .novelty {
+        width: 20vw;
+    }
+
+    #product-card .right {
+        width: 100%;
+    }
+
+    #product-card .specifications li {
+        margin-bottom: 2.2vw;
+    }
+
+    #product-card .specifications li .title {
+        font-size: 3.5vw;
+    }
+
+    #product-card .specifications li .value {
+        font-size: 3vw;
+    }
+
+    #product-card .add-to-compilation span {
+        font-size: 4vw;
+    }
+
+    #product-card .add-to-compilation .icon {
+        width: 6vw;
+        max-width: 6vw;
+    }
+
+    #product-card .you-know .title {
+        font-size: 3vw;
+    }
+
+    #product-card .you-know .options {
+        flex-direction: column;
+    }
+
+    #product-card .you-know .options li {
+        margin-bottom: 2vw;
+    }
+
+    #product-card .you-know .options li img {
+        width: 12vw;
+        margin-right: 2vw;
+    }
+
+    #product-card .you-know .options li span {
+        font-size: 4vw;
+    }
+
+    #product-card .drawings-and-application {
+        flex-direction: column;
+    }
+
+    #product-card .drawings-and-application .drawings {
+        width: 100%;
+    }
+
+    #product-card .drawings-and-application .drawings .title {
+        font-size: 5vw;
+        height: auto;
+    }
+
+    #product-card .drawings-and-application .drawings .photos {
+        width: 100%;
+    }
+
+    #product-card .drawings-and-application .drawings .photos img {
+        width: 48%;
+    }
+
+    #product-card .drawings-and-application .application {
+        width: 100%;
+    }
+
+    #product-card form {
+        width: 85%;
+    }
+
+    #product-card form .btn-send {
+        font-size: 3vw;
+    }
+
+    #slider-service .top-bar .main-title span,
+    #slider-safety .top-bar .main-title span {
+        font-size: 3vw;
+    }
+
+    #slider-service .top-bar .main-title img,
+    #slider-safety .top-bar .main-title img {
+        width: 3vw;
+    }
+
+    #video .swiper-slide {
+        width: 100%;
+    }
+
+    #video .swiper-button-prev,
+    #video .swiper-button-next,
+    .gallery-top .swiper-button-prev,
+    .gallery-top .swiper-button-next,
+    #projects .swiper-container .btn-wrapper .btn {
+        width: 7.5vw;
+        height: 11vw;
+        margin-top: -5.5vw;
+        line-height: 9.5vw;
+    }
+
+    #slider-service .title,
+    #slider-safety .title {
+        padding-top: 1.5vw;
+        margin: 0 0 0 20.5vw;
+        line-height: 2vw;
+    }
+
+    #slider-safety .title {
+        margin-left: 32.5vw;
+    }
+
+    #slider-service .btn-wrapper,
+    #slider-safety .btn-wrapper {
+        width: 8.5vw;
+        padding-top: 2vw;
+    }
+
+    #slider-service .btn-wrapper img,
+    #slider-safety .btn-wrapper img {
+        width: 3.85vw;
+    }
+
+    #slider-service .top-bar .main-title,
+    #slider-safety .top-bar .main-title {
+        padding-top: 1.5vw;
+    }
+
+    #compilation .container {
+        text-align: center;
+        border: 0;
+    }
+
+    #compilation .container > .title,
+    #catalog #compilation > .title {
+        font-size: 3.5vw;
+    }
+
+    #compilation .container > .title img,
+    #catalog #compilation > .title img {
+        width: 3.2vw;
+    }
+
+    #compilation .container > a,
+    #catalog #compilation > a {
+        font-size: 2.88vw;
+    }
+
+    #compilation ul {
+        flex-wrap: wrap;
+    }
+
+    #compilation ul li {
+        width: calc(100%/3 - 6px);
+    }
+
+    #compilation ul li:nth-child(3) {
+        border-right: 1px solid #cfcfcf;
+    }
+
+    #compilation .btn-look-compilation {
+        margin-top: 2vw;
+        font-size: 3vw;
+    }
+
+    #compilation .btn-look-compilation span {
+        font-size: 3vw;
+    }
+
+    #catalog #slider-service .title,
+    #catalog #slider-safety .title {
+        width: auto;
+        padding-top: 1vw;
+    }
+
+    #catalog .founded {
+        display: none;
+    }
+
+    #catalog .founded-adaptive {
+        display: block;
+    }
+
+    #projects .tabs {
+        width: 100%;
+    }
+
+    #projects .tabs .photo {
+        width: 14vw;
+        height: 14vw;
+    }
+
+    #projects .tabs .title {
+        font-size: 3.5vw;
+    }
+
+    #projects .tabs > div {
+        text-align: center;
+    }
+
+    #projects .content .title {
+        font-size: 3.75vw;
+    }
+
+    #projects .content .left-right {
+        flex-direction: column;
+    }
+
+    #projects .content .left {
+        width: 100%;
+    }
+
+    #projects .content .right {
+        width: 100%;
+        margin-top: 2vw;
+    }
+
+    #projects .content .right > p {
+        font-size: 3.1vw;
+    }
+
+    #projects .swiper-container .map > .title {
+        font-size: 4.8vw;
+    }
+
+    #projects .btn-wrapper {
+        top: 88vw;
+        width: 55vw;
+    }
+
+    #projects .button-prev .text,
+    #projects .button-next .text {
+        font-size: 3vw;
+        height: 8.6vw;
+    }
+
+    #projects .swiper-container .btn-wrapper .btn {
+        margin-top: 0;
+    }
+
+    #map-realized {
+        height: 40vw;
+    }
+
+    #seo .title {
+        font-size: 3vw;
+    }
+
+    #seo p {
+        font-size: 3vw;
+    }
+
+    #seo .content.collapsed {
+        max-height: 184vw;
+    }
+
+    #seo .icon img {
+        width: 4vw;
+    }
+
+    #seo .content {
+        max-height: 16vw;
     }
 }

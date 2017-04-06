@@ -8,6 +8,8 @@ function init(){
         controls: []
     }, {suppressMapOpenBlock: true});
 
+    mapContacts.behaviors.disable('scrollZoom');
+
     placemarkContacts = new ymaps.Placemark([59.917669, 30.288550], {}, {
         iconLayout: 'default#image',
         iconImageHref: 'images/kompan-man.png',

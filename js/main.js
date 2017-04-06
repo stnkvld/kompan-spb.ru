@@ -7,7 +7,7 @@ $(document).ready(function() {
     var videoCarousel = new Swiper("#video .video-carousel", {
         direction: 'horizontal',
         loop: true,
-        slidesPerView: 4,
+        slidesPerView: 'auto',
         prevButton: '.swiper-button-prev',
         nextButton: '.swiper-button-next'
     });
@@ -41,23 +41,26 @@ $(document).ready(function() {
         loop: true,
         nextButton: '.button-next',
         prevButton: '.button-prev',
-        simulateTouch: false
+        simulateTouch: false,
+        // effect: "fade",
+        // fade: { crossFade: true }
     });
 
-    var sliderRealizedInTop = new Swiper("#slider-realized-in-top", {
+    var galleryTop = new Swiper('.gallery-top', {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        spaceBetween: 10
+        loop: true,
+        nested: true,
     });
-
-    var sliderRealizedInBottom = new Swiper("#slider-realized-in-bottom", {
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
         slidesPerView: 'auto',
         touchRatio: 0.2,
-        slideToClickedSlide: true,
-        simulateTouch: false
+        nested: true,
+        loop: true,
+        slideToClickedSlide: true
     });
-    sliderRealizedInTop.params.control = sliderRealizedInBottom;
-    sliderRealizedInBottom.params.control = sliderRealizedInTop;
+    // galleryTop.params.control = galleryThumbs;
+    // galleryThumbs.params.control = galleryTop;
 
     var sliderDesign = new Swiper("#slider-design", {
         direction: 'horizontal',
@@ -66,6 +69,14 @@ $(document).ready(function() {
         prevButton: '.button-prev',
         effect: "fade",
         fade: { crossFade: true }
+    });
+
+    $("#seo .icon img").on("click", function() {
+        if(!$("#seo .content").hasClass("collapsed")) {
+            $("#seo .content").addClass("collapsed");
+        } else {
+            $("#seo .content").removeClass("collapsed");
+        }
     });
 
     $("#product-card .right .specifications li .line").each(function(i, elem) {
@@ -115,12 +126,6 @@ $(document).ready(function() {
     $("a.clear-filter").on("click", function() {
         $(this).siblings(".checkbox-wrapper").find("input[type='checkbox']").prop("checked", false);
     });
-
-    // $(".age a.clear-filter").on("click", function() {
-    //     $(".age .wrapper-1 input").val("0");
-    //     $(".age .wrapper-2 input").val("16+");
-    //     $(".multirange").val("4,12");
-    // });
 });
 
 $(document).resize(function() {

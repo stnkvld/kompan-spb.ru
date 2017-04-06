@@ -19,15 +19,18 @@
                         <h2 class="title">Школа - детская игровая площадка</h2>
                         <div class="left-right">
                             <div class="left">
-                                <div id="slider-realized-in-top" class="swiper-container gallery-top">
+                                <div id="slider-realized-in-1-top" class="swiper-container gallery-top">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
                                     </div>
                                     <div class="swiper-button-next">
                                         <img src="images/prev.png">
@@ -36,15 +39,18 @@
                                         <img src="images/prev.png">
                                     </div>
                                 </div>
-                                <div id="slider-realized-in-bottom" class="swiper-container gallery-thumbs">
+                                <div id="slider-realized-in-1-bottom" class="swiper-container gallery-thumbs">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
-                                        <div class="swiper-slide" style="background-image:url('images/slider-in-1.png')"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
+                                        <div class="swiper-slide" style="background-image:url(images/slider-in-1.png)"></div>
                                     </div>
                                 </div>
                             </div>
